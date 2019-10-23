@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My Webpage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="reset.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css"/>
+
+</head>
+<body>
+
+    <nav>
+        <div class="navWrapper">
+            <div class="navLeft">
+                <h1>Inna Atamanova</h1>
+            </div>
+            <div class="navRight">
+                <div class="topnav" id="myTopnav">
+                    <a href="index.html">About</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="contact.html" class="active">Contact</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="contact">
+            <h2>Contact</h2>
+            <hr>
+            <div class="form">
+                <form method="post" action="#" name="contactform" id="contactform">
+                    <p>Name</p>
+                    <input name="name" type="text" onfocus="if(this.value == 'Elizabeth Taylor') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Elizabeth Taylor'; }" value="Elizabeth Taylor">
+                    <br><br>
+                    <p>Email</p>
+                    <input name="email" type="text" onfocus="if(this.value == 'youremail@gmail.com') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'youremail@gmail.com'; }" value="youremail@gmail.com">
+                    <br><br><br>
+                    <p>Message</p>
+                    <textarea name="comments" type="text" onfocus="if(this.value == 'Type your message...') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Type your message...'; }" value="Type your message..."></textarea>
+                    <br><br>
+                    <input type="submit" id="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    
+    <script src="main.js"></script>
+
+</body>
+</html>
